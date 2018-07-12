@@ -1,0 +1,314 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ********* CSS for nav section ********* */
+nav {
+  width: 100%;
+  background-color: rgba(1, 159, 159, 1);
+  position: fixed;
+  z-index: 1000;
+}
+nav ul,
+#contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1.25rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+}
+nav li {
+  font-size: 1em;
+  list-style-type: none;
+  padding: 0 1.25rem;
+  text-align: center;
+  color: white;
+}
+nav li a:link {
+  text-decoration: none;
+  color: white;
+}
+nav li a:visited {
+  color: white;
+}
+nav li a:hover {
+  color: rgba(233, 199, 37, 1);
+}
+
+/* ********* CSS for main section ********* */
+.splash {              /* this is like a  jumbotron */
+  height: 100vh;       /* fills the height of viewport */
+  min-height: 100vh;   /* fills the height of viewport */
+  background-image: url("jumbo.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+#greeting {
+  display: inline-block;
+  padding: 1.5rem;
+  background: rgba(22, 140, 140, 0.8);
+  max-width: 27rem;
+  width: 100%;
+  margin-left: 4vw;
+}
+#greeting h1,
+#greeting p {
+  color: white;
+  margin-bottom: 1rem;
+}
+#projects {
+  padding-top: 3rem;
+  background-color: white;
+}
+#projects h1 {
+  color: rgba(22, 140, 140, 1);
+  font-size: 3rem;
+}
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ********* CSS for Cards ********* */
+.flex-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.card {
+  width: 18rem;
+  border: 1px solid lightgrey;
+  height: 23rem;
+  border-radius: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 2rem;
+  background-color: white;
+}
+.card-image {
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+.card-body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding-top: 1rem;
+}
+.btn {
+  background-color: rgb(233, 126, 37);
+  padding: 0.625rem 1.25rem;
+  border-radius: 5px;
+  color: white;
+  width: 15rem;
+  margin: 0.625rem  0;
+  font-size: 1em;
+  border: 1px solid lightgrey;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.btn:hover {
+  background-color: rgb(24, 159, 158);
+  color: white;
+  font-weight: bold;
+}
+
+/* ********* CSS for Contact ********* */
+#contact {
+  background-color: rgb(188, 217, 217);
+}
+#contact h1 {
+  color: rgba(22, 140, 140, 1);
+  margin: 3rem 0;
+  font-size: 3rem;
+}
+#contact p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+#contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 6rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#contact li {
+  list-style-type: none;
+  padding: 0 3rem;
+  text-align: center;
+  width: 100%;
+}
+.fa-github,
+.fa-skype,
+.fa-at {
+  font-size: 6em;
+}
+#contact a:link,
+a:visited {
+  color: rgb(233, 126, 37);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+#contact a:hover {
+  color: rgb(24, 159, 158);
+}
+
+/* ********* CSS for Footer ********* */
+footer {
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media only screen and (min-width: 1440px) {
+
+  #greeting {
+    display: inline-block;
+    padding: 1.5rem;
+    background: rgba(22, 140, 140, 0.8);
+    max-width: 34rem;
+    width: 100%;
+    margin-left: 4vw;
+  }
+  #greeting h1,
+  #greeting p {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  #greeting h1 {
+    font-size: 2.5rem;
+  }
+  #greeting p {
+  font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  #projects h1 {
+    font-size: 2.5rem;
+  }
+  #contact h1 {
+    font-size: 2.5rem;
+  }
+  #contact p {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  #contact ul {
+    margin: 5rem 0;
+    padding-right: 0;
+  }
+  .fa-github,
+  .fa-skype,
+  .fa-at {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  #greeting {
+    /* margin-left: 0; */
+    margin: auto;
+  }
+  #projects h1 {
+    font-size: 1.75rem;
+  }
+  #contact h1 {
+    font-size: 1.75em;
+  }
+  #contact p {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  #contact ul {
+    margin: 3rem 0;
+    padding-right: 0;
+  }
+  #contact li {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+  .fa-github,
+  .fa-skype,
+  .fa-at {
+    font-size: 4rem;
+  }
+  footer {
+    font-size: 0.75rem;
+  }
+}

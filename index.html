@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portfolio</title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+<!-- Nav Bar     -->
+<header>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section>
+<!-- Splash Section -->
+  <div class="splash" id="welcome-section">
+    <div class="intro">
+      <div id="greeting">
+        <h1 class="">Let's work together and make it happen!</h1>
+        <p class="">My name is Chris and I am a front-end web developer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ********* PROJECTS ********* -->
+<section id="projects">
+  <header class="flex-center">
+    <h1>Recent Projects</h1>
+  </header>
+  <article class="flex-card-container">
+
+    <div class="card project-tile">
+      <img class="card-image" src="tribute.png" alt="tribute screenshot">
+    <div class="card-body flex-center">
+        <h3>Tribute Page</h3>
+        <p>FreeCodeCamp Project</p>
+        <p>HTML / CSS</p>
+        <a href="https://claret15.github.io/FCC-Tribute/" target="blank"><button class="btn">View project</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="survey.png" alt="survey screenshot">
+      <div class="card-body flex-center">
+        <h3>Survey Form</h3>
+        <p>FreeCodeCamp Project</p>
+        <p>HTML / CSS</p>
+        <a href="#" target="blank"><button class="btn">View project</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="technical.png" alt="technical screenshot">
+    <div class="card-body flex-center">
+        <h3>Technical Documentation</h3>
+        <p>FreeCodeCamp Project</p>
+        <p>HTML / CSS</p>
+        <a href="#" target="blank"><button class="btn">View project</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="product.png" alt="product screenshot">
+      <div class="card-body flex-center">
+        <h3>Product Landing Page</h3>
+        <p>FreeCodeCamp Project</p>
+        <p>HTML / CSS</p>
+        <a href="#" target="blank"><button class="btn">View project</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="comingsoon-sm.jpeg" alt="coming soon">
+    <div class="card-body flex-center">
+        <!-- <h3>Product Landing Page</h3> -->
+        <p>Coming soon...</p>
+        <!-- <a href="#" target="blank"><button class="btn">View project</button></a> -->
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="comingsoon-sm.jpeg" alt="coming soon">
+    <div class="card-body flex-center">
+        <!-- <h3>Product Landing Page</h3> -->
+        <p>Coming soon...</p>
+        <!-- <a href="#" target="blank"><button class="btn">View project</button></a> -->
+      </div>
+    </div>
+  </article>
+</section>
+<!-- ********* CONTACT ********* -->
+<section id="contact">
+  <header class="flex-center">
+      <h1>Let's get in touch!</h1>
+  </header>
+  <article class="flex-center">
+    <div>
+      <p>Let's have a chat over a cup of tea/coffee</p>
+      <ul>
+        <li><a href="https://github.com/Claret15" target="_blank" class="icon" id="profile-link"><i class="fab fa-github" ></i></a></li>
+        <li><a href="#" target="_blank" class="icon"><i class="fab fa-skype"></i></a></li>
+        <li><a href="#" target="_blank" class="icon"><i class="fas fa-at"></i></a></li>
+      </ul>
+    </div>
+  </article>
+</section>
+</main>
+<footer>
+  <div>
+   <p>&copy; 2018 CC - A FreeCodeCamp Project</p>
+  </div>
+</footer>
+
+<script>
+
+  const projectName = 'portfolio';
+  localStorage.setItem('example_project', 'Personal Portfolio');
+
+</script>
+</body>
+</html>
